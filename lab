@@ -1,0 +1,19 @@
+#My coffee shop lab. The purpose of this code is to match up with our lab assignment instructions
+#I first begin by asking the user for number of coffees and muffins bought
+number_coffees=int(input("Number of coffees bought?"))
+number_muffins=int(input("Number of muffins bought?"))
+print("*"*39) #This just adds 39 star symbols to a line to match up with the lab assignment
+coffee_price=5.00 #Assigning prices to each coffee and muffin
+muffin_price=4.00
+subtotal=(number_coffees*coffee_price)+(number_muffins*muffin_price)
+tax=0.06 #Setting the tax rate that will be calculated into price
+tax=subtotal*tax
+total=subtotal+tax
+print("*"*39)
+print("My Coffee and Muffin Shop Receipt")
+print(f"{number_coffees} Coffee at $5 each: ${number_coffees*coffee_price:.2f}") #This will print the user input and the price for their number of coffees and the line below for the muffins
+print(f"{number_muffins} Muffins at $4 each: ${number_muffins*muffin_price:.2f}")
+print(f"6% tax: ${tax:.2f}") #This will print the tax rate
+print("---------")
+print(f"Total: ${total:.2f}") #This will print the total
+print("*"*39)
